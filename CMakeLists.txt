@@ -12,10 +12,6 @@ project(Template VERSION 1.0.0)
 
 # Add all source files inside src (recursively)
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
-if (NOT WIN32)
-    file(GLOB_RECURSE NOTIF_SOURCES CONFIGURE_DEPENDS includes/*.cpp)
-    list(APPEND SOURCES ${NOTIF_SOURCES})
-endif()
 
 # Set up the mod binary
 add_library(${PROJECT_NAME} SHARED ${SOURCES})

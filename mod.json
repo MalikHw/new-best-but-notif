@@ -9,7 +9,7 @@
         "android": "2.2081",
         "ios": "2.2081"
     },
-    "version": "1.0.0",
+    "version": "1.0.1",
     "id": "malikhw47.new-best-but-notif",
     "name": "New Best BUT Notification!",
     "developer": "MalikHw47",
@@ -29,6 +29,6 @@
     },
     "dependencies": {
         "geode.node-ids": ">=v1.23.3",
-        "miskaa.notif": ">=1.0.3"
+        "miskaa.notif": ">=1.0.4"
     }
 }
