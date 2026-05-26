@@ -39,13 +39,13 @@ jobs:
       - name: Download miskaa.notif
         run: |
           curl -L https://github.com/MalikHw/notif/releases/download/v1.0.5-beta/miskaa.notif.geode -o miskaa.notif.geode
+          geode package install miskaa.notif.geode
 
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:
           combine: true
           target: ${{ matrix.config.target }}
-          extra-mods: miskaa.notif.geode
 
   package:
     name: Package builds
